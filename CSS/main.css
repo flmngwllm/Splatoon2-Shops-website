@@ -1,0 +1,761 @@
+/*custom font*/
+@font-face {
+    font-family: 'splatoon2regular';
+    src: url('../splatoon2-webfont.woff2') format('woff2'),
+         url('../splatoon2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body{
+    font-family: 'splatoon2regular';
+    font-size: 25px;
+    color:#fe447d; 
+    text-shadow: 2px 2px 0 black;
+    
+}
+
+
+#Ammotxt{
+    color: #fe447d;
+    text-shadow: 2px 2px 0 black;
+}
+/* keyframes for sliding in left and right*/
+.frontshell{
+    animation: s-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes s-left {
+    0% {
+      
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .backshell{
+    animation: s-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  @keyframes s-right {
+    0% {
+      
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    background-image: url('../Images/striped_backblack.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+    padding: 0 20px;
+}
+
+/*icons*/
+.icnav{
+    height:40px;
+    width:40px;
+    
+    
+}
+
+/*links*/
+a{
+    text-decoration: none;
+    color: lime;
+    text-shadow: 2px 2px 0 black;
+}
+
+#Aknights{
+height: 150px;
+width: 150px;
+color: white ;
+}
+
+
+
+/*social media icons*/
+.icon{
+    height: 50px;
+    width: 50px;
+    
+}
+/*Home Page*/
+#home{
+    background-image:url('../Images/Squidwallpaper.png');
+    
+  
+   
+}
+
+
+
+
+
+.front_page{
+   display: flex;
+   
+}
+
+#sheld{
+    text-align: center;
+}
+
+/*speech bubble*/
+.bubble {
+    
+    background: #c6fe58;
+    box-shadow: 4px 4px 0 rgba(252, 252, 252, 0.4);
+    border-radius: 20px;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin: 0px auto 20px 60px; ;
+    max-width: 400px;
+    padding: 60px;
+    height: 200px;
+    position: relative;
+    animation: appear 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 1s;
+    z-index:1;
+    text-shadow:none;
+}
+
+@keyframes appear {
+    0% {
+      
+              transform: scale(0);
+              transform-origin: 0% 100%;
+      opacity: 1;
+    }
+    100% {
+              transform: scale(1);
+
+              transform-origin: 0% 100%;
+      opacity: 1;
+    }
+  }
+  
+.bubble p {
+    margin: 0 0 10px;
+    font-size: 30px;
+    color:black;
+    text-decoration: none;
+}
+.bubble p:last-of-type {
+    margin-bottom: 0;
+}
+
+.bubble::after {
+    border-right: 20px solid transparent;
+    border-top: 20px solid #c6fe58;
+    bottom: -20px;
+    content: "";
+   position: absolute;
+    left: 20px;
+}
+
+/*Weapons Page*/
+.mw{
+    color:#fe447d;
+}
+
+/*text in modal*/
+.weap_name{
+    text-align: center;
+}
+
+/*animation on weapon page the drops down*/
+.mweap {
+	    animation: slide-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+@keyframes slide-top {
+    0% {
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform-origin: 50% 0%;
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+              transform: translateY(0) scaleY(1) scaleX(1);
+              transform-origin: 50% 50%;
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 500px;
+    background-color: black;
+    text-align: left;
+    padding: 5px 0;
+    border-radius: 20px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*skill bar*/
+#skill { 
+	list-style: none;
+	font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	width: 296px;
+	margin: 50px auto 0;
+	position: relative;
+	line-height: 2em;
+	padding: 30px 0;
+}
+
+#skill li { 
+	margin-bottom:50px; 
+	background:black;
+	background-image: linear-gradient(top, #e1ddd9, #e9e5e2);  
+	height:20px; 
+	border-radius:10px;  
+	box-shadow: 0 1px 0px black, 0 1px 0 #fcfcfc;	  
+}
+
+#skill li h3 { 
+	position:relative; 
+	top:-25px;
+}
+
+.bar { 
+	height:18px; 
+	margin:1px 2px;  
+	position:absolute;
+	border-radius:10px;
+	box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;		
+}
+
+.range {
+	width:100%; 
+	animation: range 2s ease-out;
+	background-color: #f674a4;
+	background-image: linear-gradient(top, #f674a4, #e06995);
+}
+
+.attack {
+	width:90%;
+	animation: attack 2s ease-out;
+	background-color: lime;
+	background-image: linear-gradient(top, #f0bb4b, #d9aa44);
+}
+
+.fire_rate {
+	width:65%;
+	animation: fire-rate 2s ease-out;
+	background-color: indigo;
+	background-image: linear-gradient(top, #a1ce5b, #91ba52);
+}
+
+
+@keyframes range       { 0% { width:0px;} 100%{ width:100%;}  }
+@keyframes attack        { 0%  { width:0px;} 100%{ width:90%;}  }
+@keyframes fire-rate     { 0%  { width:0px;} 100%{ width:65%;}  }
+
+
+/*SubWeapons*/
+.subweap{
+    background-image: url('../Images/splatoon_alt_wallpaper.png');
+    background-size: cover;
+    
+   
+   
+  
+    
+
+    
+}
+
+/*buttons that lead to modals*/
+button{
+    border:none;
+    background-color: black;
+    border-radius: 20px;
+    margin:20px 50px;
+    
+}
+
+
+/*animation for buttons with blur effect*/
+.slide_left {
+	        animation: slide-left 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+@keyframes slide-left {
+    0% {
+              transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+              transform-origin: 100% 50%;
+              filter: blur(40px);
+              opacity: 0;
+    }
+    100% {
+              transform: translateX(0) scaleY(1) scaleX(1);
+              transform-origin: 50% 50%;
+              filter: blur(0);
+              opacity: 1;
+    }
+  }
+
+
+  .slide_right {
+
+	        animation: slide-right 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+@keyframes slide-right {
+    0% {
+              transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+              transform-origin: 0% 50%;
+              filter: blur(40px);
+              opacity: 0;
+    }
+    100% {
+              transform: translateX(0) scaleY(1) scaleX(1);
+              transform-origin: 50% 50%;
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+
+  /*animation that moves back and forth by adjusting the degrees on skew*/
+button:hover{
+    animation: jello 0.9s both;
+}
+
+
+@keyframes jello{
+    0% {
+              transform: skew(0deg 0deg);
+    }
+    30% {
+              transform: skew(25deg 25deg);
+    }
+    40% {
+              transform: skew(-15deg, -15deg);
+    }
+    50% {
+              transform: skew(15deg, 15deg);
+    }
+    65% {
+              transform: skew(-5deg, -5deg);
+    }
+    75% {
+              transform: skew(5deg, 5deg);
+    }
+    100% {
+              transform: skew(0deg 0deg);
+    }
+  }
+.sub{
+    height: 100px;
+    width: 100px;
+    margin-top: 8px;
+    background-color:black;
+    border-radius: 20px;
+   
+    
+}
+
+.sub_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+    text-align: center; 
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .sub_column {
+    flex: 100%;
+    padding: 0 4px;
+  }
+
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-image: url('../Images/striped_backblack.jpg');
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    background-size:cover;
+    width: 80%; 
+}
+
+/* The Close Button */
+.mcont {
+    color: lime;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.mcont:hover,
+.mcont:focus {
+    color: rgb(255, 64, 147);
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+  
+/*Brands Page Starts here*/
+.bran{
+    background-image: url("../Images/animated_splatoon.jpeg");
+    background-size: cover;
+    background-position: center; 
+    color:black;
+    text-shadow:2px 2px 0 white;
+}
+
+
+/*used a grid for the brands*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    padding: 10px;
+  }
+  .grid-item {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    
+  }
+
+  
+  
+/*brand logos*/
+.brands{
+   text-align: center;
+   height: 60px;
+   width: 100px;
+  
+}
+
+#splat_logo{
+    width: 300px;
+    height: 50px;
+}
+
+#sorella_logo{
+width: 300px;
+}
+
+#nouveau_logo{
+    width: 300px;
+    
+}
+
+#kensa_logo{
+    height: 100px;
+}
+
+
+/*History Page Starts Here */
+
+#History{
+    background-image: url('../Images/SunkenScrollShell.png') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    font-size: 20px;
+    
+}
+
+/* Style the topnav links */
+.topnav a {
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color:white;
+    color: #fe447d;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-image: url('../Images/striped_backblack.jpg');
+    padding: 10px;
+    text-align: center;
+}
+
+/*Test Facility Page Starts Here */
+#test_facility{
+    background-image: url('../Images/colorful_splatoon.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+    text-shadow: 2px 2px 0 black;
+    
+  
+}
+
+.agent4{
+    height: 430px;
+    width: 430px;
+}
+
+/*History Page Starts Here */
+
+#History{
+    background-image: url('../Images/SunkenScrollShell.png') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#cuttle{
+    height: 400px;
+    width: 300px;
+}
+  
+/*Weapons page*/
+
+body, html{
+  height:100%;
+  margin:0;
+  font-weight:400;
+  line-height:1.8em;
+  
+}
+
+/*images for the parralax*/
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+ 
+  background-attachment:fixed;
+}
+
+
+.pimg1{
+  background-image:url('../Images/InkvsOct.jpeg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../Images/Inkling_splatling.jpeg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../Images/dualiescolorfulback.jpg');
+  min-height:400px;
+}
+
+.pimg4{
+    background-image:url('../Images/Inkling_slosh.jpeg');
+    min-height:400px;
+  }
+
+  .pimg5{
+    background-image:url('../Images/roller_charger_splash.jpg');
+    min-height:400px;
+  }
+
+  .pimg6{
+    background-image:url('../Images/Inkling_Brella.jpg');
+    min-height:400px;
+  }
+
+  .pimg7{
+    background-image:url('../Images/ink_gal52.jpeg');
+    min-height:400px;
+  }
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#282e34;
+  
+}
+
+.section-dark{
+  background-color:#282e34;
+ 
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+ 
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+ 
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+/*Partners page*/
+  
+#partner-p{
+    color:#fe447d;
+}
+
+
+
+  .spl1, .spl2, .spl3, .spl4 {
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+  }
+  
+  .spl1{
+    background-image:url('../Images/group_imagespl.jpeg');
+    min-height:100%;
+  }
+  
+  .spl2{
+    background-image:url('../Images/Inkling_sit.jpg');
+    min-height:400px;
+  }
+  
+  .spl3{
+    background-image:url('../Images/partners_fashion.jpg_large');
+    min-height:400px;
+  }
+  
+  .spl4{
+      background-image:url('../Images/summer_splat.jpeg');
+      min-height:400px;
+    }
