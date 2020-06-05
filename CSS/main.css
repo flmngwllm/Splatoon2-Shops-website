@@ -119,9 +119,6 @@ color: white ;
 }
 
 
-
-
-
 .front_page{
    display: flex;
    
@@ -184,7 +181,7 @@ color: white ;
     left: 20px;
 }
 
-/*Weapons Page*/
+/****************** Weapons Page *************/
 .mw{
     color:#fe447d;
 }
@@ -320,16 +317,10 @@ color: white ;
 @keyframes fire-rate     { 0%  { width:0px;} 100%{ width:65%;}  }
 
 
-/*SubWeapons*/
+/***************  SubWeapons Page  ******************/
 .subweap{
     background-image: url('../Images/splatoon_alt_wallpaper.png');
     background-size: cover;
-    
-   
-   
-  
-    
-
     
 }
 
@@ -532,7 +523,7 @@ width: 300px;
 }
 
 
-/*History Page Starts Here */
+/**********************  History Page Starts Here  *******************/
 
 #History{
     background-image: url('../Images/SunkenScrollShell.png') ;
@@ -725,7 +716,7 @@ body, html{
   background-color:transparent;
 }
 
-/*Partners page*/
+/******************  Partners page  *****************/
   
 #partner-p{
     color:#fe447d;
@@ -737,7 +728,7 @@ body, html{
     position:relative;
     opacity:0.70;
     background-position:center;
-    background-size:cover;
+    background-size:cover; 
     background-repeat:no-repeat;
     background-attachment:fixed;
   }
