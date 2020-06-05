@@ -453,6 +453,8 @@ button:hover{
     border-radius: 20px;
     background-size:cover;
     width: 80%; 
+    text-align: center;
+
 }
 
 /* The Close Button */
