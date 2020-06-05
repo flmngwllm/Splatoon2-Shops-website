@@ -379,6 +379,7 @@ button{
   /*animation that moves back and forth by adjusting the degrees on skew*/
 button:hover{
     animation: jello 0.9s both;
+    cursor: pointer;
 }
 
 
