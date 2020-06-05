@@ -453,7 +453,7 @@ button:hover{
     border-radius: 20px;
     background-size:cover;
     width: 80%; 
-    text-align: center;
+        text-align: center;
 
 }
 
@@ -589,7 +589,7 @@ body {
 }
 
 .footer {
-    background-image: url('../Images/striped_backblack.jpg');
+    background-image: url('../Images/splatoon2striped.png');
     padding: 10px;
     text-align: center;
 }
