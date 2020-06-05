@@ -62,7 +62,10 @@ body{
     background-position: center;
     background-size: cover;
     padding: 2px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
 }
 
 h1{
@@ -96,10 +99,19 @@ a{
     text-shadow: 2px 2px 0 black;
 }
 
+#Atext{
+  font-size: 80px;
+  text-align: center;
+}
+
 #Aknights{
-height: 150px;
-width: 150px;
+height: 140px;
+width: 190px;
 color: white ;
+filter: contrast(0%);
+margin-right: 30px;
+margin-top: 20px;
+
 }
 
 
