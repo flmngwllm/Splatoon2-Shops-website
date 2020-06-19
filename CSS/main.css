@@ -19,7 +19,7 @@ body{
 
 
 #Ammotxt{
-    color: #fe447d;
+    color: white;
     text-shadow: 2px 2px 0 black;
 }
 /* keyframes for sliding in left and right*/
@@ -102,7 +102,17 @@ a{
 #Atext{
   font-size: 80px;
   text-align: center;
-  color: #c6fe58;
+  color: lime;
+  margin-left: -60px;
+
+}
+
+#AtextS{
+  font-size: 80px;
+  text-align: center;
+  color: lime;
+  text-shadow: none;
+  margin-left: -60px;
 }
 
 #Aknights{
@@ -110,7 +120,7 @@ height: 140px;
 width: 190px;
 color: white ;
 filter: contrast(0%);
-margin-right: 30px;
+margin-right: 70px;
 margin-top: 20px;
 
 }
@@ -612,7 +622,7 @@ body {
     background-image: url('../Images/colorful_splatoon.jpg') ;
     background-position: center;
     background-repeat: no-repeat;
-    color:white;
+    color:#fe447d;
     text-shadow: 2px 2px 0 black;
     
   
