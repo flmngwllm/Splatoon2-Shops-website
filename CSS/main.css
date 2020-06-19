@@ -558,9 +558,11 @@ width: 300px;
 
 #History{
     background-image: url('../Images/SunkenScrollShell.png') ;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
 
