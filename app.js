@@ -176,10 +176,6 @@ function deco_gal(){
         deco_data = "../Images/Weapons gallery/Deco_Rapid_Blaster_Pro.jpg";
     } else if(begin_deco== 3){ 
         deco_data = "../Images/Weapons gallery/Carbon_Roller_Deco.jpg";
-    }else if(begin_deco== 4){ 
-        deco_data = "../Images/Weapons gallery/DBloblobber.jpg.jpg";
-    }else if(begin_deco== 5){ 
-        deco_data = "../Images/Weapons gallery/Deco_Glooga_Dualies.jpg";
     }else {
     begin_deco = 1;
 
@@ -245,8 +241,6 @@ function kensa_gal(){
        kensa_data = "../Images/Weapons gallery/Kensa_Charger.jpg";
     } else if(begin_kensa == 3){ 
         kensa_data = "../Images/Weapons gallery/Kensa_Splat_Roller.jpg";
-    }else if(begin_kensa== 4){ 
-        kensa_data = "../Images/Weapons gallery/Kensa_Splat_Dualies.jpg";
     } else {
     begin_kensa = 1;
 
@@ -270,10 +264,6 @@ function neo_gal(){
        neo_data = "../Images/Weapons gallery/Neo_Sploosh-o-matic.jpg";
     } else if(begin_neo == 3){ 
         neo_data = "../Images/Weapons gallery/Luna_Blaster_Neo.jpg";
-    }else if(begin_neo== 4){ 
-        neo_data = "../Images/Weapons gallery/Clash_Blaster_Neo.jpg";
-    } else if(begin_neo== 5){ 
-        neo_data = "//Images/Weapons gallery/Sloshing_Machine_Neo.jpg";
     } else {
     begin_neo = 1;
 
@@ -296,10 +286,6 @@ function nouveau_gal(){
        nouveau_data = "../Images/Weapons gallery/Octobrush_Nouveau.jpg";
     } else if(begin_nouveau == 3){ 
         nouveau_data = "../Images/Weapons gallery/Tri-Slosher_Nouveau.jpg";
-    }else if(begin_nouveau== 4){ 
-        nouveau_data = "../Images/Weapons gallery/Dapple_Dualies_Nouveau.jpg";
-    } else if(begin_nouveau == 5){ 
-        nouveau_data = "../Images/Weapons gallery/Ballpoint_Splatling N.jpg";
     } else {
     begin_nouveau = 1;
 
@@ -322,9 +308,7 @@ function sorella_gal(){
        sorella_data = "../Images/Weapons gallery/Tenta_Sorella_Brella.jpg";
     } else if(begin_sorella== 3){ 
         sorella_data = "../Images/Weapons gallery/Undercover_Brella.jpg";
-    } else if(begin_sorella== 4){ 
-        sorella_data = "../Images/Weapons gallery/Undercover_Sorella_Brella.jpg";
-    }else {
+    } else {
     begin_sorella = 1;
 
 }
@@ -340,10 +324,12 @@ function change_ten(){
 function tentatek_gal(){
     var tentatek_data;
     if(begin_tek==1){
-        tentatek_data="../Images/Weapons gallery/Dark_Tetra_Dualies .jpg";
+        tentatek_data="../Images/Weapons gallery/Dark_Tetra_Dualies.jpg";
     } else if(begin_tek == 2){ 
        tentatek_data = "../Images/Weapons gallery/Light_Tetra_Dualies.jpg";
-    } else {
+    }  else if(begin_tek == 3){ 
+        tentatek_data = "../Images/Weapons gallery/Light_Tetra_Dualies.jpg";
+     }else {
         begin_tek = 1;
 
 }
@@ -363,12 +349,6 @@ function splat_gal(){
        splat_data = "../Images/Weapons gallery/Splattershot_Jr.jpg";
     } else if(begin_splat== 3){ 
         splat_data = "../Images/Weapons gallery/Splattershot_Pro.jpg";
-    }else if(begin_splat== 4){ 
-        splat_data = "../Images/Weapons gallery/Splat_Charger.jpg";
-    } else if(begin_splat== 5){ 
-        splat_data = "../Images/Weapons gallery/Splatterscope.jpg";
-    } else if(begin_splat== 4){ 
-        splat_data = "../Images/Weapons gallery/Splat_Dualies.jpg";
     } else {
     begin_splat = 1;
 
